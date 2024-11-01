@@ -1,0 +1,214 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+body{
+    background: linear-gradient(to top, #28a745, #48a85e, #86c194, #9bbea3);
+    /* background: linear-gradient(to bottom, #00c016, #ccffcc); */
+    background-attachment: fixed;
+    /* background-color: #28a745; */
+    height: 100vh;
+    display: flex;
+}
+section.inicio{
+    margin-top: 1%;
+    padding: 20px 10%; /*laterais*/
+}
+
+.interface{
+    max-width: 1280px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    width: 280px;
+}
+section.inicio .flex{
+    align-items: center;/* alinha o texto verticalmente */
+    gap: 0px;/* respiro entre uma DIV e outra */
+}
+.inicio .txt-inicio p{
+    width: 280px;
+    font-weight: 500;
+    font-size: 55px;
+    color: white;
+    line-height: 1.5; /* Define o espaçamento entre as linhas de texto */
+/*     font-weight: bold; */
+}
+.inicio .txt-inicio p span{
+    display: block; /* quebra de linha */
+}
+
+.reserva {
+    margin-left: 10%;
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-top-right-radius: 50px;
+    font-size: 24px;
+    text-align: left;
+    width: 600px;
+}
+.celular-img{
+    width: 200px;
+}
+.celular-img img{
+    max-width: 400px; /* Defina o tamanho máximo da imagem */
+    height: auto;
+}
+.container p{
+    font-size: 20px;
+    display: block;
+    width: 150px;
+}
+
+.logo-cronate {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-bottom-left-radius: 50px;
+    text-align: left; 
+}
+.logo-cronate img{
+    max-width: 120px; /* Defina o tamanho máximo da imagem */
+    height: auto;
+}
+
+.container {
+    margin-left: 10%;
+    display: flex;
+    gap: 150px;
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-bottom-left-radius: 50px;
+    width: 600px;
+    justify-content: center;
+}
+
+.notebook {
+    width: 300px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 7px 7px 0 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.screen {
+    width: 290px;
+    height: 190px;
+    background-color: #fff;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+/*     align-items: center; */
+    overflow: hidden;
+}
+.screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hinge {
+    width: 340px;
+    height: 15px;
+    background-color: #949393;
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    top: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(to left, #8b8b8b, #d1d1d1, #e4e3e3, #dedede, #dedede, #dedede, #dedede, #dedede, #dedede, #dedede, #dedede, #dedede, #dedede, #8b8b8b);
+}
+
+.hinge::before {
+    content: '';
+    width: 40px;
+    height: 5px;
+    background-color: #9c9c9c;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    background: linear-gradient(to left, #717171, #b0b0b0, #b0b0b0, #b0b0b0, #b0b0b0, #717171);
+    top: 0px;
+}
+/* LOJA APP */
+.container_loja{
+    margin-top: 1%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 3px;
+    width: 700px;
+    text-align: center;
+}
+
+.container_baixar{
+    margin-top: 30px;
+    align-items: center;
+    display: absolute;
+    margin-bottom: 1;
+    text-align: center;
+    max-width: 540px;
+}
+.container_baixar p{
+    color: white;
+    font-size:24px ;
+    text-align: center;
+}
+
+.aplicativo p{
+    margin-left: 10%;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    width: 600px;
+    
+}
+section div a{
+    text-align: center;
+}
+.button{
+    border: 1px solid rgb(255, 255, 255);
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 220px;
+    overflow: auto;
+    float: left;
+}
+
+.container_app {
+    padding: 10px;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    width: 600px;
+}
+
+a:hover{
+    box-shadow: 0 0 8px #a9a9a9;
+    transform: scale(1.10);
+    background-color: #28a745;
+    color: white;
+    font-weight: 700;
+}
